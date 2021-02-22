@@ -1,0 +1,30 @@
+{
+  "name": "valgus",
+  "version": "0.0.1",
+  "description": "Lightweight and easy-to-use framework for fast web development made with Go",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkaiser014/valgus.git"
+  },
+  "keywords": [
+    "go",
+    "golang",
+    "html",
+    "css",
+    "javascript",
+    "pug",
+    "sass",
+    "typescript",
+    "framework"
+  ],
+  "author": "dkaiser014",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkaiser014/valgus/issues"
+  },
+  "homepage": "https://github.com/dkaiser014/valgus#readme"
+}

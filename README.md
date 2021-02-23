@@ -13,6 +13,6 @@ go nutz, use this.
 
 - [x] Run an http server using the go `net/http` package.
 - [x] Render an .html file using the go `html/template` package.
-- [] Make a `router.go` to handle all the incoming requests.
+- [x] Make a `router.go` to handle all the incoming requests.
 - [] Implement error handling for non-existing pages.
 - [] Use `pugjs` and `sass` as transpilers for `html` and `css`. 

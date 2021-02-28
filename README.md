@@ -14,6 +14,7 @@ go nutz, use this.
 - [x] Run an http server using the go `net/http` package.
 - [x] Render an .html file using the go `html/template` package.
 - [x] Make a `router.go` to handle all the incoming requests.
-- [ ] Implement error handling for non-existing pages.
-- [ ] Use `pugjs` and `sass` as transpilers for `html` and `css`. 
+- [x] Implement error handling for non-existing pages.
+- [x] Use `pugjs` as transpiler for `html`.
+- [ ] Use `sass` as transpiler for `css`
 - [ ] Create a welcome page with a little tutorial.

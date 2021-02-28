@@ -33,14 +33,34 @@ func RenderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 
 // IndexHandler handles the index route
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
-	title := r.URL.Path[len("/"):]
+	title := r.URL.Path
+	if r.URL.Path != "/" {
+		ErrorHandler(w, r, http.StatusNotFound)
+		return
+	}
+
 	p, _ := LoadPage(title)
 	RenderTemplate(w, "index", p)
 }
 
 // AboutHandler handles the about route
 func AboutHandler(w http.ResponseWriter, r *http.Request) {
-	title := r.URL.Path[len("/about/"):]
+	title := r.URL.Path
+	if r.URL.Path != "/about/" {
+		ErrorHandler(w, r, http.StatusNotFound)
+		return
+	}
+
 	p, _ := LoadPage(title)
 	RenderTemplate(w, "about", p)
+}
+
+// ErrorHandler handles not found pages
+func ErrorHandler(w http.ResponseWriter, r *http.Request, status int) {
+	title := "/error/"
+	w.WriteHeader(status)
+	if status == http.StatusNotFound {
+		p, _ := LoadPage(title)
+		RenderTemplate(w, "error", p)
+	}
 }

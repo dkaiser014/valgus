@@ -16,3 +16,4 @@ go nutz, use this.
 - [x] Make a `router.go` to handle all the incoming requests.
 - [ ] Implement error handling for non-existing pages.
 - [ ] Use `pugjs` and `sass` as transpilers for `html` and `css`. 
+- [ ] Create a welcome page with a little tutorial.

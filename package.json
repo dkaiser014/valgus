@@ -4,7 +4,7 @@
   "description": "Lightweight and easy-to-use framework for fast web development made with Go",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pug ./web/templates --out ./web/views -P"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/dkaiser014/valgus/issues"
   },
-  "homepage": "https://github.com/dkaiser014/valgus#readme"
+  "homepage": "https://github.com/dkaiser014/valgus#readme",
+  "devDependencies": {
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.32.8"
+  }
 }

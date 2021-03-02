@@ -5,9 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-       html,
-body {
-  background-color: red;
+       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2f3542;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: #57606f;
+  font-family: "Courier New", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #70a1ff;
+  font-family: "Courier New", sans-serif;
+  font-weight: 400;
+  transition: color 0.2s ease-in;
+}
+a:hover {
+  color: #1e90ff;
+}
+a:focus {
+  color: #1e90ff;
+}
+a:target {
+  color: #1e90ff;
+}
+a:active {
+  color: #1e90ff;
+}
+
+button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ff6b81;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  transition: background-color 0.2s ease-in;
+}
+button:hover {
+  background-color: #ff4757;
+}
+button:focus {
+  background-color: #ff4757;
+}
+button:target {
+  background-color: #ff4757;
+}
+button:active {
+  background-color: #ff4757;
 }
 
 /*# sourceMappingURL=index.css.map */
@@ -16,10 +74,14 @@ body {
     <title>Valgus</title>
   </head>
   <body>
-    <h1>Welcome to the views/index.html page</h1>
-    <p>If you're reading this it means that you are ready to start your project ASAP!</p>
-    <footer id="footer">
-      <p>Valgus - A lightweight and easy-to-use framework for fast web development made with Go!</p>
+    <div style="text-align: center; margin-top: 50px;"><img src="static/img/svg/undraw_rocket.svg" alt="Undraw Rocket" width="650" height="500"></div>
+    <h1 style="text-align: center">¡Welcome to Valgus!</h1>
+    <p style="text-align: center">A lightweight and easy-to-use framework for fast web development made with Go!</p>
+    <div style="text-align: center">
+      <button>You are currently in  <strong>views/index.html</strong></button>
+    </div>
+    <footer>
+      <p style="text-align: center">Created with &#9829; by dkaiser014 - <a href="https://github.com/dkaiser014/valgus" target="_blank">View on Github  </a></p>
     </footer>
   </body>
 </html>

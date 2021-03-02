@@ -2,6 +2,12 @@ doctype html
 html(lang="en")
     include ../includes/head.pug
     body
-        h1 Welcome to the views/error.html 
-        p If you're reading this it means that what you're looking for does not exist, try again!
+        div(style="text-align: center; margin-top: 50px;")
+            img(src="static/img/svg/undraw_error.svg", alt="Undraw Rocket", width="700", height="500")
+        h1(style="text-align: center") There is nothing in here, or is there...
+        p(style="text-align: center") Actually is just that the page you're looking for does not exist, you should check 
+            strong handlers.go, router.go & views/
+        div(style="text-align: center")
+            button You are currently in  
+                strong views/error.html
         include ../includes/foot.pug

@@ -1,6 +1,89 @@
-$red: red;
+// IMPORTS -------- //
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-html, 
-body {
-    background-color: $red;
+// FONTS ---------- //
+$montserrat: 'Montserrat', sans-serif;
+$courierNew: 'Courier New', sans-serif;
+
+// COLORS --------- //
+$white: #ffffff;
+$prestigeBlue: #2f3542;
+$grisaille: #57606f;
+$wildWatermelon: #ff6b81;
+$watermelon: #ff4757;
+$frenchSkyBlue: #70a1ff;
+$clearChill: #1e90ff;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $prestigeBlue;
+    font-family: $montserrat;
+    font-weight: 700;
 }
+
+p {
+    color: $grisaille;
+    font-family: $courierNew;
+    font-weight: 400;
+}
+
+button {
+    background-color: $wildWatermelon;
+    border-color: $wildWatermelon;
+    color: $white;
+    font-family: $montserrat;
+    font-weight: 400;
+
+    :hover {
+        background-color: $watermelon;
+        border-color: $watermelon;
+    }
+
+    :target {
+        background-color: $watermelon;
+        border-color: $watermelon;
+    }
+
+    :focus {
+        background-color: $watermelon;
+        border-color: $watermelon;
+    }
+
+    :active {
+        background-color: $watermelon;
+        border-color: $watermelon;
+    }
+}
+
+a {
+    color: $frenchSkyBlue;
+    font-family: $courierNew;
+    font-weight: 400;
+
+    :hover {
+        color: $frenchSkyBlue;
+        text-decoration: underline;
+    }
+
+    :target {
+        color: $frenchSkyBlue;
+        text-decoration: underline;
+    }
+
+    :focus {
+        color: $frenchSkyBlue;
+        text-decoration: underline;
+    }
+
+    :active {
+        color: $frenchSkyBlue;
+        text-decoration: underline;
+    }
+}
+
+
+

@@ -11,10 +11,11 @@ go nutz, use this.
 
 ## TODO's
 
-- [x] Run an http server using the go `net/http` package.
-- [x] Render an .html file using the go `html/template` package.
-- [x] Make a `router.go` to handle all the incoming requests.
-- [x] Implement error handling for non-existing pages.
-- [x] Use `pugjs` as transpiler for `html`.
+- [x] Run an http server using the go `net/http` package
+- [x] Render an .html file using the go `html/template` package
+- [x] Make a `router.go` to handle all the incoming requests
+- [x] Implement error handling for non-existing pages
+- [x] Use `pugjs` as transpiler for `html`
 - [ ] Use `sass` as transpiler for `css`
-- [ ] Create a welcome page with a little tutorial.
+- [ ] Create a welcome page with a little tutorial
+- [ ] Create an error page

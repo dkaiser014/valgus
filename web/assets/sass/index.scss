@@ -31,59 +31,55 @@ p {
     font-weight: 400;
 }
 
-button {
-    background-color: $wildWatermelon;
-    border-color: $wildWatermelon;
-    color: $white;
-    font-family: $montserrat;
-    font-weight: 400;
-
-    :hover {
-        background-color: $watermelon;
-        border-color: $watermelon;
-    }
-
-    :target {
-        background-color: $watermelon;
-        border-color: $watermelon;
-    }
-
-    :focus {
-        background-color: $watermelon;
-        border-color: $watermelon;
-    }
-
-    :active {
-        background-color: $watermelon;
-        border-color: $watermelon;
-    }
-}
-
 a {
     color: $frenchSkyBlue;
     font-family: $courierNew;
     font-weight: 400;
+    transition: color 0.2s ease-in;
 
-    :hover {
-        color: $frenchSkyBlue;
-        text-decoration: underline;
+    &:hover {
+        color: $clearChill;
     }
 
-    :target {
-        color: $frenchSkyBlue;
-        text-decoration: underline;
+    &:focus {
+        color: $clearChill;
     }
 
-    :focus {
-        color: $frenchSkyBlue;
-        text-decoration: underline;
+    &:target {
+        color: $clearChill;
     }
 
-    :active {
-        color: $frenchSkyBlue;
-        text-decoration: underline;
-    }
+    &:active {
+        color: $clearChill;
+    }    
 }
 
+button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $wildWatermelon;
+    border: none;
+    box-shadow: none;
+    color: $white;
+    font-family: $montserrat;
+    font-weight: 400;
+    transition: background-color 0.2s ease-in;
 
+    &:hover {
+        background-color: $watermelon;
+    }
 
+    &:focus {
+        background-color: $watermelon;
+    }
+
+    &:target {
+        background-color: $watermelon;
+    }
+
+    &:active {
+        background-color: $watermelon;
+    }
+}
